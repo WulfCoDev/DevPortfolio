@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="w-screen h-screen flex flex-col items-center">
+    <div className="w-screen h-screen bg-secondary flex flex-col items-center">
       {/* <Navbar /> */}
       <Hero />
     </div>
