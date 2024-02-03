@@ -5,7 +5,7 @@ const Hero = () => {
       <div className="h-[200px] w-[200px]">
         <img
           className="rounded-xl shadow-xl shadow-[#292f2b]"
-          src="src/assets/hero.JPG"
+          src="public/hero.JPG"
           alt=""
         />
       </div>
