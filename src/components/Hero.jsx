@@ -15,14 +15,14 @@ const Hero = () => {
           alt=""
         />
       </div>
+      <span className="mr-4 text-primary font-secondary">I am a</span>
       <motion.div
         variants={fadeIn("up", 0.4)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="mb-6 text-[36px] lg:text-[60px] uppercase leading-[1] font-primary"
+        className="mb-6 text-[36px] lg:text-[60px] uppercase leading-[1] flex flex-col"
       >
-        <span className="mr-4 text-primary font-secondary">I am a</span>
         <TypeAnimation
           sequence={[
             "Developer",
