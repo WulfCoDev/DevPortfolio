@@ -5,23 +5,53 @@ import { fadeIn } from "../variants";
 const Hero = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full h-[100svh]">
-      <h1 className="text-primary font-secondary text-6xl mb-2 font-thin">
+      <motion.h1
+        className="text-primary font-secondary text-6xl mb-2 font-thin"
+        variants={fadeIn("down", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+      >
         Hello
-      </h1>
-      <p className="font-secondary font-thin text-primary text-lg">
+      </motion.h1>
+      <motion.p
+        variants={fadeIn("right", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="font-secondary font-thin text-primary text-lg"
+      >
         My name is
-      </p>
-      <p className="font-quad text-[#928c92] text-4xl ">CHRISTIAN ALEXANDER</p>
+      </motion.p>
+      <motion.p
+        variants={fadeIn("left", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="font-quad text-[#928c92] text-4xl "
+      >
+        CHRISTIAN ALEXANDER
+      </motion.p>
       <div className="h-[200px] w-[200px] m-2">
-        <img
-          className="rounded-xl shadow-xl shadow-[#292f2b]"
+        <motion.img
+          variants={fadeIn("center", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="rounded-xl shadow-lg shadow-secondary"
           src="/hero.png"
           alt=""
         />
       </div>
-      <p className="mr-4 text-primary font-secondary font-thin text-lg">
+      <motion.p
+        variants={fadeIn("right", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="mr-4 text-primary font-secondary font-thin text-lg"
+      >
         I am a
-      </p>
+      </motion.p>
       <motion.div
         variants={fadeIn("up", 0.4)}
         initial="hidden"
