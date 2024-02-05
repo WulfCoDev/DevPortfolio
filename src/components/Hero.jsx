@@ -4,7 +4,7 @@ import { fadeIn } from "../variants";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-6 w-full h-[100svh]">
+    <div className="flex flex-col justify-center items-center w-full h-[100svh]">
       <h1 className="text-primary font-secondary text-6xl mb-2 font-thin">
         Hello
       </h1>
