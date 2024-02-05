@@ -34,7 +34,7 @@ const Hero = () => {
       </motion.p>
       <div className="h-[200px] w-[200px] m-2">
         <motion.img
-          variants={fadeIn("center", 0.4)}
+          variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
