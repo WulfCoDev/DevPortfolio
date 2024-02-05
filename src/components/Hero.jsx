@@ -8,7 +8,7 @@ const Hero = () => {
       <h1 className="text-primary font-secondary text-6xl mb-2 font-thin">
         Hello
       </h1>
-      <p className="font-secondary font-thin text-primary text-sm">
+      <p className="font-secondary font-thin text-primary text-lg">
         My name is
       </p>
       <p className="font-quad text-[#928c92] text-4xl ">CHRISTIAN ALEXANDER</p>
@@ -19,7 +19,9 @@ const Hero = () => {
           alt=""
         />
       </div>
-      <p className="mr-4 text-primary font-secondary">I am a</p>
+      <p className="mr-4 text-primary font-secondary font-thin text-lg">
+        I am a
+      </p>
       <motion.div
         variants={fadeIn("up", 0.4)}
         initial="hidden"
