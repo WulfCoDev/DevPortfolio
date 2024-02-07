@@ -1,12 +1,12 @@
 const CardFlip = () => {
   return (
-    <section className="h-[250px] w-[250px] flex justify-center items-center text-white">
-      <div className="w-[250px] h-[250px] bg-transparent cursor-pointer group perspective">
+    <section className="h-[250px] w-[250px] flex justify-center items-center text-white overflow-auto rounded-xl">
+      <div className="w-[250px] h-[250px] cursor-pointer group perspective">
         <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
           <div className="absolute backface-hidden border-2 border-primary shadow-primary shadow-lg w-full h-full rounded-xl">
             <img src="/hero.png" className="w-full h-full rounded-xl" />
           </div>
-          <div className="absolute my-rotate-y-180 backface-hidden w-fit h-full bg-tertiary rounded-xl">
+          <div className="absolute my-rotate-y-180 backface-hidden w-fit h-fit bg-tertiary rounded-xl">
             <div className="flex flex-col items-center h-full p-2 overflow-hidden">
               <h1 className="text-2xl font-thin text-primary font-secondary underline">
                 About Me

@@ -605,6 +605,18 @@ video {
   height: 400px;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[3250px\] {
+  height: 3250px;
+}
+
+.h-\[325px\] {
+  height: 325px;
+}
+
 .w-\[250px\] {
   width: 250px;
 }
@@ -665,6 +677,10 @@ video {
        column-gap: 4rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -694,6 +710,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .pt-6 {
