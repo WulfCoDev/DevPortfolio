@@ -4,13 +4,16 @@ import { fadeIn } from "../variants";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-evenly items-center w-full h-[100svh]">
+    <div
+      id="hero"
+      className="flex flex-col justify-evenly items-center w-full h-[100svh]"
+    >
       <motion.h1
         className="text-primary font-secondary text-6xl font-thin m-4"
         variants={fadeIn("down", 0.8)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
       >
         Hello
       </motion.h1>
