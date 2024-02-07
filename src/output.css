@@ -580,6 +580,10 @@ video {
   height: 100vh;
 }
 
+.h-\[250px\] {
+  height: 250px;
+}
+
 .w-\[200px\] {
   width: 200px;
 }
@@ -592,6 +596,10 @@ video {
   width: 100vw;
 }
 
+.w-\[250px\] {
+  width: 250px;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -602,6 +610,14 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .rounded-xl {
