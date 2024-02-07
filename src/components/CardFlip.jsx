@@ -7,7 +7,7 @@ const CardFlip = () => {
             <img src="/hero.png" className="w-full h-full rounded-xl" />
           </div>
           <div className="absolute my-rotate-y-180 backface-hidden w-fit h-fit bg-tertiary rounded-xl">
-            <div className="flex flex-col items-center h-full p-2 overflow-hidden">
+            <div className="flex flex-col items-center h-full p-2">
               <h1 className="text-2xl font-thin text-primary font-secondary underline">
                 About Me
               </h1>
