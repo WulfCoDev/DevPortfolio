@@ -1,12 +1,13 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import CardFlip from "./CardFlip";
 
 const Hero = () => {
   return (
     <div
-      id="hero"
-      className="flex flex-col justify-evenly items-center w-full h-[100svh]"
+      id="home"
+      className="flex flex-col justify-between items-center w-full h-screen"
     >
       <motion.h1
         className="text-primary font-secondary text-6xl font-thin m-4"
@@ -38,21 +39,19 @@ const Hero = () => {
         </motion.p>
       </div>
 
-      <div className="h-[250px] w-[250px]">
-        <motion.img
-          initial={{ opacity: 0, scale: 0.25 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 2,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-          viewport={{ once: false, amount: 0.7 }}
-          className="rounded-xl shadow-lg shadow-secondary"
-          src="/hero.png"
-          alt=""
-        />
-      </div>
+      <motion.div
+        className=""
+        initial={{ opacity: 0, scale: 0.25 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 2,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        viewport={{ once: false, amount: 0.7 }}
+      >
+        <CardFlip />
+      </motion.div>
       <div className="flex justify-center items-center flex-col">
         <motion.p
           variants={fadeIn("right", 0.8)}

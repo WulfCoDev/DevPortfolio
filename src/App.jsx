@@ -1,11 +1,13 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-secondary flex flex-col items-center">
+    <div className="bg-secondary flex flex-col items-center">
       {/* <Navbar /> */}
       <Hero />
+      {/*<About />*/}
     </div>
   );
 }
