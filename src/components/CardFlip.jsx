@@ -1,6 +1,6 @@
 const CardFlip = () => {
   return (
-    <section className="h-[250px] w-[250px] flex justify-center items-center text-white overflow-auto rounded-xl">
+    <section className="h-[250px] w-[250px] flex justify-center items-center text-white overflow-auto rounded-xl bg-tertiary">
       <div className="w-[250px] h-[250px] cursor-pointer group perspective">
         <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
           <div className="absolute backface-hidden border-2 border-primary shadow-primary shadow-lg w-full h-full rounded-xl">
