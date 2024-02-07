@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col justify-evenly items-center w-full h-[100svh]">
       <motion.h1
-        className="text-primary font-secondary text-6xl font-thin"
+        className="text-primary font-secondary text-6xl font-thin m-4"
         variants={fadeIn("down", 0.8)}
         initial="hidden"
         whileInView={"show"}
