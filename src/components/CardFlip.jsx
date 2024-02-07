@@ -4,7 +4,7 @@ const CardFlip = () => {
       <div className="w-[250px] h-[250px] bg-transparent cursor-pointer group perspective">
         <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
           <div className="absolute backface-hidden border-2 border-primary shadow-primary shadow-lg w-full h-full rounded-xl">
-            <img src="public/hero.png" className="w-full h-full rounded-xl" />
+            <img src="/hero.png" className="w-full h-full rounded-xl" />
           </div>
           <div className="absolute my-rotate-y-180 backface-hidden w-fit h-fit bg-tertiary rounded-xl">
             <div className="flex flex-col items-center h-full p-2 overflow-hidden">

@@ -10,7 +10,7 @@ const Hero = () => {
       className="flex flex-col justify-between items-center w-full h-screen"
     >
       <motion.h1
-        className="text-primary font-secondary text-6xl font-thin m-4"
+        className="text-primary font-secondary text-6xl font-thin mt-10"
         variants={fadeIn("down", 0.8)}
         initial="hidden"
         whileInView={"show"}
