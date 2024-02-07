@@ -832,6 +832,11 @@ video {
   backface-visibility: hidden;
 }
 
+.\*\:bg-tertiary > * {
+  --tw-bg-opacity: 1;
+  background-color: rgb(81 97 103 / var(--tw-bg-opacity));
+}
+
 .group:hover .group-hover\:my-rotate-y-180 {
   transform: rotateY(180deg);
 }
