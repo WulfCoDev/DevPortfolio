@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="flex flex-col justify-between items-center w-full h-screen"
+      className="flex flex-col justify-evenly items-center w-full h-screen"
     >
       <motion.h1
         className="text-primary font-secondary text-6xl font-thin mt-10"
