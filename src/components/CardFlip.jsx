@@ -1,12 +1,30 @@
+import React, { useRef } from "react";
+
 const CardFlip = () => {
+  const aboutMeRef = useRef(null);
+
+  const flipCard = () => {
+    // Reset the scroll position of the about me side when flipping the card
+    if (aboutMeRef.current) {
+      aboutMeRef.current.scrollTop = 0;
+    }
+  };
+
   return (
-    <section className="h-[250px] w-[250px] flex justify-center items-center text-white overflow-auto scrollbar-hide rounded-xl bg-tertiary">
+    <section className="h-[250px] w-[250px] flex justify-center items-center text-white overflow-hidden rounded-xl bg-tertiary shadow-lg shadow-primary">
       <div className="w-[250px] h-[250px] cursor-pointer group perspective">
         <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
           <div className="absolute backface-hidden border-2 border-primary shadow-primary shadow-lg w-full h-full rounded-xl">
-            <img src="/hero.png" className="w-full h-full rounded-xl" />
+            <img
+              src="/hero.png"
+              className="w-full h-full rounded-xl"
+              alt="Hero"
+            />
           </div>
-          <div className="absolute my-rotate-y-180 backface-hidden w-fit h-fit bg-tertiary *:bg-tertiary rounded-xl">
+          <div
+            ref={aboutMeRef}
+            className="absolute my-rotate-y-180 backface-hidden w-full h-full overflow-auto bg-tertiary rounded-xl scrollbar-hide border-primary border-solid border-2"
+          >
             <div className="flex flex-col items-center h-full p-2">
               <h1 className="text-2xl font-thin text-primary font-secondary underline">
                 About Me
