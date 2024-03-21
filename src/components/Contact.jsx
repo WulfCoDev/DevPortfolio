@@ -38,6 +38,7 @@ const Contact = () => {
               className="rounded-md bg-blue-400/50 border-primary border-2"
               type="text"
               id="name"
+              name="name"
               maxLength={25}
               required
               placeholder=" Enter name"
@@ -51,6 +52,7 @@ const Contact = () => {
               className="rounded-md bg-blue-400/50 border-primary border-2"
               type="email"
               id="email"
+              name="email"
               required
               placeholder=" Enter email"
             />
@@ -67,7 +69,10 @@ const Contact = () => {
               placeholder=" Enter message"
             />
           </div>
-          <button className="bg-primary w-fit p-2 rounded-md font-tertiary">
+          <button
+            className="bg-primary w-fit p-2 rounded-md font-tertiary"
+            type="submit"
+          >
             Submit
           </button>
         </form>
