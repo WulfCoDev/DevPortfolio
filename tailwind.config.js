@@ -23,9 +23,9 @@ export default {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     backgroundImage: {
-      realty: "URL('../src/assets/WulfCoRealty.png')",
-      tetris: "URL('../src/assets/WulfCoTetris.png')",
-      pip: "URL('../src/assets/PRETTYINPINK.png')",
+      realty: "url('../src/assets/WulfCoRealty.png')",
+      tetris: "url('../src/assets/WulfCoTetris.png')",
+      pip: "url('../src/assets/PRETTYINPINK.png')",
     },
 
     fontFamily: {
