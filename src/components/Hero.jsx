@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="flex flex-col justify-evenly items-center w-full h-[100svh]"
+      className="flex flex-col justify-evenly items-center w-full min-h-screen"
     >
       <motion.h1
-        className="text-primary font-secondary text-6xl font-thin mt-10"
+        className="text-primary font-secondary text-6xl font-thin mt-10 md:text-8xl"
         variants={fadeIn("down", 0.8)}
         initial="hidden"
         whileInView={"show"}
@@ -24,7 +24,7 @@ const Hero = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="font-secondary font-thin text-primary text-lg"
+          className="font-secondary font-thin text-primary text-lg md:text-2xl"
         >
           My name is
         </motion.p>
@@ -33,7 +33,7 @@ const Hero = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="font-quad text-[#928c92] text-4xl "
+          className="font-quad text-[#928c92] text-4xl md:text-6xl"
         >
           CHRISTIAN ALEXANDER
         </motion.p>
@@ -58,7 +58,7 @@ const Hero = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="mr-4 text-primary font-secondary font-thin text-lg"
+          className="mr-4 text-primary font-secondary font-thin text-lg md:text-2xl"
         >
           I am a
         </motion.p>
