@@ -26,8 +26,8 @@ const Contact = () => {
       <div>
         <form
           className="flex flex-col space-y-4 *:flex *:flex-col bg-tertiary p-4 rounded-lg w-[90vw] md:w-[75vw]"
-          action="mailto:wulfcodev@gmail.com"
-          method="post"
+          netlify
+          name="contact"
           encType="text/plain"
         >
           <div>
@@ -38,6 +38,7 @@ const Contact = () => {
               className="rounded-md bg-blue-400/50 border-primary border-2"
               type="text"
               id="name"
+              maxLength={25}
               required
               placeholder=" Enter name"
             />
