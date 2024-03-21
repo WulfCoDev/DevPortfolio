@@ -22,6 +22,12 @@ const Myclass = plugin(function ({ addUtilities }) {
 export default {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
+    backgroundImage: {
+      realty: "URL('../src/assets/WulfCoRealty.png')",
+      tetris: "URL('../src/assets/WulfCoTetris.png')",
+      pip: "URL('../src/assets/PRETTYINPINK.png')",
+    },
+
     fontFamily: {
       primary: "Roboto",
       secondary: "Poppins",
@@ -29,13 +35,15 @@ export default {
       quad: "Protest Riot",
       fifth: "Lobster",
     },
-    colors: {
-      primary: "#dae2df",
-      secondary: "#292f2b",
-      tertiary: "#516167",
-      quad: "radial-gradient(circle, rgba(169,213,242,1) 0%, rgba(0,0,0,1) 55%)",
+
+    extend: {
+      colors: {
+        primary: "#dae2df",
+        secondary: "#292f2b",
+        tertiary: "#516167",
+        quad: "radial-gradient(circle, rgba(169,213,242,1) 0%, rgba(0,0,0,1) 55%)",
+      },
     },
-    extend: {},
   },
   plugins: [Myclass],
 };
