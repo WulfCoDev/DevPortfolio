@@ -26,9 +26,9 @@ const Contact = () => {
       <div>
         <form
           className="flex flex-col space-y-4 *:flex *:flex-col bg-tertiary p-4 rounded-lg w-[90vw] md:w-[75vw]"
-          netlify
           name="contact"
-          encType="text/plain"
+          method="POST"
+          data-netlify="true"
         >
           <div>
             <label className="font-secondary text-primary" htmlFor="name">
