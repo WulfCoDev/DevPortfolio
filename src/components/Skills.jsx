@@ -13,7 +13,7 @@ const Skills = () => {
             <p className="font-tertiary text-primary font-semibold underline md:text-4xl">
               Front-End Technologies:
             </p>
-            <ul className="*:text-primary *:font-quad *:md:text-2xl">
+            <ul className="*:text-primary *:font-tertiary *:md:text-2xl">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -26,7 +26,7 @@ const Skills = () => {
             <p className="font-tertiary text-primary font-semibold underline md:text-4xl">
               Back-End Technologies:
             </p>
-            <ul className="*:text-primary *:font-quad *:md:text-2xl">
+            <ul className="*:text-primary *:font-tertiary *:md:text-2xl">
               <li>Node.js</li>
               <li>Express.js</li>
               <li>PostgreSQL</li>
@@ -40,7 +40,7 @@ const Skills = () => {
             <p className="font-tertiary text-primary font-semibold underline md:text-4xl">
               Soft-Skills:
             </p>
-            <ul className="*:text-primary *:font-quad *:md:text-2xl">
+            <ul className="*:text-primary *:font-tertiary *:md:text-2xl">
               <li>Fast paced self-learner</li>
               <li>Adaptable</li>
               <li>Agile methodology</li>
@@ -52,7 +52,7 @@ const Skills = () => {
             <p className="font-tertiary text-primary font-semibold underline md:text-4xl">
               Other Skills:
             </p>
-            <ul className="*:text-primary *:font-quad *:md:text-2xl">
+            <ul className="*:text-primary *:font-tertiary *:md:text-2xl">
               <li>Photshop</li>
               <li>Illustrator</li>
               <li>Figma</li>

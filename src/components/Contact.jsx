@@ -20,6 +20,9 @@ const Contact = () => {
       <p className="font-primary text-white text-center text-pretty md:text-xl">
         Message me on a social above or fill out the form below
       </p>
+      <p className="font-primary text-white text-center text-pretty md:text-xl">
+        I am currently seeking opportunities within California or remote.
+      </p>
       <div>
         <form
           className="flex flex-col space-y-4 *:flex *:flex-col bg-tertiary p-4 rounded-lg w-[90vw] md:w-[75vw]"
